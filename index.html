@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO -->
+  <title>MECAFUTURO S.A.S | Reparación y Mantenimiento de Maquinaria Pesada</title>
+  <meta name="description" content="MECAFUTURO S.A.S — Especialistas en reparación, mantenimiento preventivo y correctivo de maquinaria pesada. +10 años de experiencia, +500 equipos reparados. Diagnóstico técnico, sistemas hidráulicos, motores industriales y más." />
+  <meta name="keywords" content="reparación maquinaria pesada, mantenimiento maquinaria, mantenimiento preventivo, correctivo, hidráulica industrial, motores industriales, soldadura industrial, repuestos maquinaria, MECAFUTURO" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="MECAFUTURO S.A.S" />
+  <link rel="canonical" href="https://mecafuturo.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MECAFUTURO S.A.S | Maquinaria Pesada" />
+  <meta property="og:description" content="Expertos en reparación y mantenimiento de maquinaria pesada con más de 10 años de experiencia." />
+  <meta property="og:url" content="https://mecafuturo.com/" />
+  <meta property="og:image" content="/img/logo-mecafuturo.png" />
+  <meta property="og:site_name" content="MECAFUTURO S.A.S" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MECAFUTURO S.A.S | Maquinaria Pesada" />
+  <meta name="twitter:description" content="Expertos en reparación y mantenimiento de maquinaria pesada." />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/png" href="/img/logo-mecafuturo.png" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            yellow: { DEFAULT: '#F5C400', light: '#FFD740', dark: '#C49A00' },
+            dark: { DEFAULT: '#111111', 2: '#1A1A1A', 3: '#222222' },
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            barlow: ['Barlow Condensed', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "MECAFUTURO S.A.S",
+    "description": "Especialistas en reparación y mantenimiento de maquinaria pesada",
+    "url": "https://mecafuturo.com",
+    "telephone": "+57-300-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO"
+    },
+    "openingHours": "Mo-Fr 07:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body class="bg-black text-white font-inter antialiased">
+
+  <!-- ============================================
+       LOADER
+       ============================================ -->
+  <div id="loader" role="status" aria-label="Cargando MECAFUTURO">
+    <img src="/img/logo-mecafuturo.png" alt="MECAFUTURO logo" width="120" height="60"
+         style="height:60px;width:auto;object-fit:contain;"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+    <div style="display:none;align-items:center;gap:.5rem;">
+      <div style="width:10px;height:10px;background:#F5C400;border-radius:50%;"></div>
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:800;letter-spacing:.1em;color:#F5C400;">MECAFUTURO</span>
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <p class="loader-text">Cargando...</p>
+  </div>
+
+  <!-- ============================================
+       NAVBAR
+       ============================================ -->
+  <header id="navbar" role="banner">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between" aria-label="Navegación principal">
+
+      <!-- Logo solo texto -->
+      <a href="#hero" class="flex items-center gap-2 flex-shrink-0 group" aria-label="MECAFUTURO inicio">
+        <span class="font-barlow font-extrabold text-2xl tracking-wide text-white group-hover:text-yellow transition-colors duration-200">
+          MECA<span class="text-yellow">FUTURO</span>
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden lg:flex items-center gap-8" role="list">
+        <li><a href="#about" class="nav-link" data-section="about">Nosotros</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Servicios</a></li>
+        <li><a href="#gallery" class="nav-link" data-section="gallery">Proyectos</a></li>
+        <li><a href="#testimonials" class="nav-link" data-section="testimonials">Clientes</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contacto</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="flex items-center gap-4">
+        <a href="#contact" class="btn-cta-nav hidden sm:inline-flex">Solicitar Cotización</a>
+        <button id="hamburger" class="hamburger lg:hidden" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" role="navigation" aria-label="Menú móvil">
+    <a href="#about" class="nav-link">Nosotros</a>
+    <a href="#services" class="nav-link">Servicios</a>
+    <a href="#gallery" class="nav-link">Proyectos</a>
+    <a href="#testimonials" class="nav-link">Clientes</a>
+    <a href="#contact" class="nav-link">Contacto</a>
+    <a href="#contact" class="btn-primary mt-4">Solicitar Cotización</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10 w-full">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Left: Content -->
+          <div class="space-y-8">
+            <div class="badge-hero reveal">
+              <span class="badge-dot"></span>
+              Empresa certificada &amp; especializada
+            </div>
+
+            <h1 id="hero-title" class="hero-title reveal delay-100">
+              Expertos en<br />
+              Reparación de<br />
+              <span class="text-yellow-glow" id="typed-text">Maquinaria Pesada</span>
+              <span style="color:#F5C400;border-right:3px solid #F5C400;animation:blink-cursor .8s infinite;padding-right:2px;"></span>
+            </h1>
+
+            <p class="text-lg text-gray-400 leading-relaxed max-w-xl reveal delay-200">
+              Somos la empresa de referencia en reparación, mantenimiento preventivo y correctivo de maquinaria industrial. Tecnología avanzada, técnicos expertos y atención personalizada para mantener tu maquinaria en óptimas condiciones.
+            </p>
+
+            <div class="flex flex-wrap gap-3 reveal delay-300">
+              <a href="#contact" class="btn-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                Solicitar Diagnóstico
+              </a>
+              <a href="#services" class="btn-secondary">
+                Ver Servicios
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M19 9l-7 7-7-7"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Stats grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-5 pt-4 reveal delay-400">
+              <div class="stat-card">
+                <div class="stat-number">+10</div>
+                <div class="stat-label">Años de<br>experiencia</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">+500</div>
+                <div class="stat-label">Equipos<br>reparados</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">24h</div>
+                <div class="stat-label">Atención<br>rápida</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Técnicos<br>certificados</div>
+              </div>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="flex flex-wrap gap-2 reveal delay-500">
+              <span class="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Garantía certificada
+              </span>
+              <span class="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Respuesta en 24h
+              </span>
+              <span class="trust-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Equipo especializado
+              </span>
+            </div>
+          </div>
+
+          <!-- Right: Mascota + decorative -->
+          <div class="hero-mascota-wrap hidden lg:flex reveal-right delay-200">
+            <div class="hero-ring hero-ring-1"></div>
+            <div class="hero-ring hero-ring-2"></div>
+            <div class="hero-ring hero-ring-3"></div>
+            <div class="parallax-layer relative">
+              <img src="/img/mascota-mecafuturo.png"
+                   alt="Mascota MECAFUTURO - Lobo mecánico técnico"
+                   class="mascota-img relative z-10"
+                   style="width:340px;height:auto;max-width:90vw;"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <!-- Fallback mascota SVG -->
+              <div style="display:none;align-items:center;justify-content:center;width:340px;height:340px;position:relative;z-index:10;">
+                <div style="width:200px;height:200px;background:linear-gradient(135deg,#F5C400,#C49A00);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:7rem;box-shadow:0 0 60px rgba(245,196,0,0.4);" class="mascota-img">🐺</div>
+              </div>
+              <div class="mascota-glow"></div>
+              <!-- Badge overlay -->
+              <!-- <div style="position:absolute;bottom:2rem;right:-1rem;background:rgba(245,196,0,0.95);color:#000;padding:.6rem 1.1rem;border-radius:10px;font-size:.8rem;font-weight:800;letter-spacing:.05em;box-shadow:0 8px 25px rgba(245,196,0,.4);">
+                ⚡ Diagnóstico Rápido
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;opacity:.6;">
+        <span style="font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#999;">Scroll</span>
+        <div style="width:1px;height:40px;background:linear-gradient(180deg,#F5C400,transparent);"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         QUIÉNES SOMOS
+         ============================================ -->
+    <section id="about" class="py-24 lg:py-32" aria-labelledby="about-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+          <!-- Left: Text -->
+          <div>
+            <div class="section-tag reveal">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><circle cx="12" cy="12" r="10"/></svg>
+              Quiénes somos
+            </div>
+            <h2 id="about-title" class="section-title mt-4 reveal delay-100">
+              Más de una década<br/>
+              de excelencia<br/>
+              <span class="text-yellow">industrial</span>
+            </h2>
+            <div class="section-line reveal delay-200"></div>
+
+            <p class="text-gray-400 leading-relaxed mt-6 reveal delay-200">
+              MECAFUTURO S.A.S es una empresa colombiana especializada en el mantenimiento y reparación integral de maquinaria pesada. Fundada con la misión de ofrecer soluciones técnicas de alto nivel, nos hemos consolidado como referentes en el sector industrial.
+            </p>
+            <p class="text-gray-400 leading-relaxed mt-4 reveal delay-300">
+              Nuestro equipo de ingenieros y técnicos certificados trabaja con los más altos estándares de calidad, usando tecnología de diagnóstico de vanguardia para garantizar resultados óptimos en cada intervención.
+            </p>
+
+            <!-- Timeline -->
+            <div class="mt-8 space-y-0 reveal delay-400">
+              <div class="timeline-item">
+                <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+                <div>
+                  <div style="font-weight:700;color:#F5C400;font-size:.85rem;margin-bottom:.25rem;">2014 — Fundación</div>
+                  <p style="font-size:.9rem;color:#999;line-height:1.6;">Nacimos con 3 técnicos especializados y una visión clara: transformar el sector de mantenimiento industrial.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+                <div>
+                  <div style="font-weight:700;color:#F5C400;font-size:.85rem;margin-bottom:.25rem;">2018 — Expansión</div>
+                  <p style="font-size:.9rem;color:#999;line-height:1.6;">Ampliamos nuestras instalaciones e incorporamos tecnología de diagnóstico computarizado.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+                <div>
+                  <div style="font-weight:700;color:#F5C400;font-size:.85rem;margin-bottom:.25rem;">2024 — Líderes del mercado</div>
+                  <p style="font-size:.9rem;color:#999;line-height:1.6;">Hoy somos la referencia regional con +500 equipos atendidos y alianzas con marcas internacionales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Cards grid -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="about-card reveal delay-100">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 style="font-weight:700;margin-bottom:.5rem;">Confianza</h3>
+              <p style="font-size:.85rem;color:#999;line-height:1.6;">Cada trabajo respaldado por garantía escrita y seguimiento post-servicio.</p>
+            </div>
+            <div class="about-card reveal delay-200">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+              </div>
+              <h3 style="font-weight:700;margin-bottom:.5rem;">Tecnología</h3>
+              <p style="font-size:.85rem;color:#999;line-height:1.6;">Equipos de diagnóstico de última generación para precisión total.</p>
+            </div>
+            <div class="about-card reveal delay-300">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <h3 style="font-weight:700;margin-bottom:.5rem;">Equipo experto</h3>
+              <p style="font-size:.85rem;color:#999;line-height:1.6;">Ingenieros y técnicos con certificaciones internacionales.</p>
+            </div>
+            <div class="about-card reveal delay-400">
+              <div class="about-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h3 style="font-weight:700;margin-bottom:.5rem;">Rapidez</h3>
+              <p style="font-size:.85rem;color:#999;line-height:1.6;">Diagnóstico y atención en menos de 24 horas, minimizando tus tiempos muertos.</p>
+            </div>
+
+            <!-- Featured card full width -->
+            <div class="col-span-2 about-card reveal delay-500" style="background:linear-gradient(135deg,rgba(245,196,0,0.08),rgba(245,196,0,0.02));border-color:rgba(245,196,0,0.2);">
+              <div style="display:flex;align-items:center;gap:1rem;">
+                <div style="font-size:2.5rem;">🏆</div>
+                <div>
+                  <div style="font-weight:800;font-size:1.1rem;margin-bottom:.25rem;">Certificación de Calidad</div>
+                  <p style="font-size:.85rem;color:#999;line-height:1.5;">Procesos certificados bajo los más altos estándares de calidad del sector industrial colombiano.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider max-w-7xl mx-auto px-8"></div>
+
+    <!-- ============================================
+         MÉTRICAS ANIMADAS
+         ============================================ -->
+    <section id="metrics" class="py-16" aria-label="Estadísticas de la empresa">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-stretch divide-y sm:divide-y-0 sm:divide-x divide-white/5">
+          <div class="metric-card flex-1 reveal">
+            <div class="metric-number" data-count="10" data-suffix="+">0+</div>
+            <div class="metric-label">Años de experiencia</div>
+            <div class="metric-desc">En el sector industrial</div>
+          </div>
+          <div class="metric-divider hidden sm:block"></div>
+          <div class="metric-card flex-1 reveal delay-100">
+            <div class="metric-number" data-count="500" data-suffix="+">0+</div>
+            <div class="metric-label">Equipos reparados</div>
+            <div class="metric-desc">Con garantía total</div>
+          </div>
+          <div class="metric-divider hidden sm:block"></div>
+          <div class="metric-card flex-1 reveal delay-200">
+            <div class="metric-number" data-count="98" data-suffix="%">0%</div>
+            <div class="metric-label">Satisfacción clientes</div>
+            <div class="metric-desc">Calificación promedio</div>
+          </div>
+          <div class="metric-divider hidden sm:block"></div>
+          <div class="metric-card flex-1 reveal delay-300">
+            <div class="metric-number" data-count="24" data-suffix="h">0h</div>
+            <div class="metric-label">Tiempo de respuesta</div>
+            <div class="metric-desc">Diagnóstico garantizado</div>
+          </div>
+          <div class="metric-divider hidden sm:block"></div>
+          <div class="metric-card flex-1 reveal delay-400">
+            <div class="metric-number" data-count="50" data-suffix="+">0+</div>
+            <div class="metric-label">Clientes activos</div>
+            <div class="metric-desc">Empresas en Colombia</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICIOS
+         ============================================ -->
+    <section id="services" class="py-24 lg:py-32" aria-labelledby="services-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+          <div class="section-tag inline-flex reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Nuestros servicios
+          </div>
+          <h2 id="services-title" class="section-title mt-4 reveal delay-100">
+            Soluciones integrales para<br/>
+            tu <span class="text-yellow">maquinaria industrial</span>
+          </h2>
+          <p class="text-gray-400 mt-4 max-w-2xl mx-auto reveal delay-200">
+            Ofrecemos una gama completa de servicios especializados para mantener tu flota operativa al máximo rendimiento.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <!-- Service 1 -->
+          <article class="service-card reveal delay-100">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">🔧</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Reparación de Maquinaria</h3>
+              <p class="service-desc">Diagnóstico y reparación integral de maquinaria pesada con repuestos originales y técnicos certificados.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card reveal delay-200">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">⚙️</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 19.07l1.41-1.41M20 12h2M2 12H.001M19.07 19.07l-1.41-1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Mantenimiento Preventivo</h3>
+              <p class="service-desc">Programas de mantenimiento planificados para evitar fallas y prolongar la vida útil de tus equipos.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card reveal delay-300">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">🔩</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Mantenimiento Correctivo</h3>
+              <p class="service-desc">Intervención técnica inmediata ante fallas críticas para restaurar la operatividad de tu maquinaria.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card reveal delay-400">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">🖥️</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Diagnóstico Técnico</h3>
+              <p class="service-desc">Análisis computarizado con equipos de última generación para identificar fallas con precisión milimétrica.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="service-card reveal delay-100">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">🏭</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Venta de Repuestos</h3>
+              <p class="service-desc">Repuestos originales y de alta calidad para toda la línea de maquinaria pesada con envío a nivel nacional.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="service-card reveal delay-200">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">🔥</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Soldadura y Fabricación</h3>
+              <p class="service-desc">Soldadura industrial de precisión y fabricación de piezas a medida con materiales certificados.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 7 -->
+          <article class="service-card reveal delay-300">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">💧</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22a7 7 0 007-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 007 7z"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Sistemas Hidráulicos</h3>
+              <p class="service-desc">Diagnóstico, reparación y reconstrucción de sistemas hidráulicos con componentes de alta presión.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 8 -->
+          <article class="service-card reveal delay-400">
+            <div class="service-img-wrap">
+              <div class="service-placeholder">⚡</div>
+              <div class="service-img-overlay"></div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Motores Industriales</h3>
+              <p class="service-desc">Reconstrucción completa de motores diesel e industriales con garantía de funcionamiento total.</p>
+              <div class="service-arrow">
+                Conocer más
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center mt-12 reveal">
+          <a href="#contact" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+            Solicitar Cotización
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================
+         GALERÍA / PROYECTOS
+         ============================================ -->
+    <section id="gallery" class="py-24" aria-labelledby="gallery-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-12">
+          <div class="section-tag inline-flex reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+            Nuestro trabajo
+          </div>
+          <h2 id="gallery-title" class="section-title mt-4 reveal delay-100">
+            Proyectos que hablan<br/>
+            por <span class="text-yellow">nuestra calidad</span>
+          </h2>
+        </div>
+
+        <div class="gallery-grid reveal delay-200">
+          <div class="gallery-item" data-title="Reparación excavadora CAT 320" tabindex="0" role="button" aria-label="Ver proyecto: Reparación excavadora CAT 320">
+            <div class="gallery-emoji">🚜</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Excavadoras</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Reparación CAT 320</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Sistema hidráulico Komatsu" tabindex="0" role="button" aria-label="Ver proyecto: Sistema hidráulico Komatsu">
+            <div class="gallery-emoji">💧</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Hidráulica</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Sistema Komatsu</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Motor John Deere reconstruido" tabindex="0" role="button" aria-label="Ver proyecto: Motor John Deere reconstruido">
+            <div class="gallery-emoji">⚡</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Motores</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Motor John Deere</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Soldadura estructura grúa" tabindex="0" role="button" aria-label="Ver proyecto: Soldadura estructura grúa">
+            <div class="gallery-emoji">🔥</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Soldadura</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Estructura grúa</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Mantenimiento preventivo flota" tabindex="0" role="button" aria-label="Ver proyecto: Mantenimiento preventivo flota">
+            <div class="gallery-emoji">🏗️</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Mantenimiento</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Flota constructora</h3>
+            </div>
+          </div>
+          <div class="gallery-item" data-title="Taller especializado MECAFUTURO" tabindex="0" role="button" aria-label="Ver proyecto: Taller especializado MECAFUTURO">
+            <div class="gallery-emoji">🏭</div>
+            <div class="gallery-overlay">
+              <span style="color:#F5C400;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Instalaciones</span>
+              <h3 style="font-weight:700;margin-top:.25rem;">Nuestro taller</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Cerrar">✕</button>
+      <div id="lightbox-content" style="text-align:center;padding:2rem;max-width:600px;"></div>
+    </div>
+
+    <!-- ============================================
+         BENEFICIOS
+         ============================================ -->
+    <section id="benefits" class="py-24" aria-labelledby="benefits-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14">
+          <div class="section-tag inline-flex reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            Por qué elegirnos
+          </div>
+          <h2 id="benefits-title" class="section-title mt-4 reveal delay-100">
+            Los beneficios de trabajar<br/>
+            con <span class="text-yellow">MECAFUTURO</span>
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <div class="benefit-card reveal delay-100">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Atención en 24 horas</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Diagnóstico y respuesta garantizada en menos de 24 horas para minimizar tu tiempo fuera de operación.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-200">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Personal certificado</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Ingenieros y técnicos con certificaciones internacionales y más de 5 años de experiencia promedio.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-300">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Tecnología avanzada</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Equipos de diagnóstico computarizado de última generación para detección precisa de fallas.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-100">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Garantía total</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Cada trabajo incluye garantía por escrito. Si algo no funciona, lo solucionamos sin costo adicional.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-200">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Soporte técnico</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Acompañamiento continuo post-servicio. Nuestros técnicos disponibles para consultas y seguimiento.</p>
+          </div>
+
+          <div class="benefit-card reveal delay-300">
+            <div class="benefit-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3 style="font-weight:700;font-size:1.05rem;margin-bottom:.5rem;">Calidad certificada</h3>
+            <p style="font-size:.875rem;color:#888;line-height:1.7;">Procesos y repuestos bajo los más altos estándares de calidad del sector industrial nacional.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+    <section id="cta-section" class="py-24 relative" aria-labelledby="cta-title">
+      <div class="cta-grid-bg"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <div>
+            <div class="section-tag inline-flex reveal">⚡ Actúa ahora</div>
+            <h2 id="cta-title" class="section-title mt-5 reveal delay-100">
+              ¿Tu maquinaria<br/>
+              necesita atención<br/>
+              <span class="text-yellow">especializada?</span>
+            </h2>
+            <p class="text-gray-400 mt-5 text-lg leading-relaxed reveal delay-200">
+              No dejes que una falla detenga tu operación. Nuestro equipo de expertos está listo para diagnosticar y solucionar cualquier problema en tu maquinaria pesada. Contáctanos hoy mismo.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8 reveal delay-300">
+              <a href="#contact" class="btn-primary" style="font-size:1.1rem;padding:1rem 2.25rem;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                Contáctanos Ahora
+              </a>
+              <a href="https://wa.me/573000000000?text=Hola%2C%20necesito%20información%20sobre%20sus%20servicios%20de%20maquinaria%20pesada" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="font-size:1.1rem;padding:1rem 2.25rem;">
+                WhatsApp directo
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-3 mt-8 reveal delay-400">
+              <span class="trust-badge">✓ Sin compromiso inicial</span>
+              <span class="trust-badge">✓ Diagnóstico gratuito</span>
+              <span class="trust-badge">✓ Respuesta inmediata</span>
+            </div>
+          </div>
+
+          <!-- Mascota CTA -->
+          <div class="flex justify-center items-center reveal-right delay-200">
+            <div class="relative" style="max-width:360px;">
+              <div style="position:absolute;inset:0;background:radial-gradient(circle,rgba(245,196,0,0.15) 0%,transparent 70%);border-radius:50%;"></div>
+              <img src="mascota-mecafuturo.png"
+                   alt="Mascota MECAFUTURO"
+                   class="mascota-img relative z-10"
+                   style="width:100%;height:auto;"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+              <div style="display:none;font-size:8rem;text-align:center;" class="mascota-img">🐺</div>
+
+              <!-- Floating card -->
+              <div style="position:absolute;top:1rem;left:-2rem;background:rgba(245,196,0,0.95);color:#000;padding:.75rem 1.25rem;border-radius:12px;font-size:.85rem;font-weight:800;box-shadow:0 8px 30px rgba(245,196,0,.4);animation:float 3s ease-in-out infinite;">
+                🔧 +500 reparaciones
+              </div>
+              <div style="position:absolute;bottom:3rem;right:-2rem;background:rgba(255,255,255,0.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);color:white;padding:.75rem 1.25rem;border-radius:12px;font-size:.85rem;font-weight:700;animation:float 3.5s ease-in-out infinite .5s;">
+                ⭐ 4.9/5 satisfacción
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIOS
+         ============================================ -->
+    <section id="testimonials" class="py-24" aria-labelledby="testimonials-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14">
+          <div class="section-tag inline-flex reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            Testimonios
+          </div>
+          <h2 id="testimonials-title" class="section-title mt-4 reveal delay-100">
+            Lo que dicen nuestros<br/>
+            <span class="text-yellow">clientes industriales</span>
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <article class="testimonial-card reveal delay-100">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "MECAFUTURO salvó nuestra operación. Tuvimos una falla crítica en una excavadora CAT y en menos de 18 horas estaba funcionando perfectamente. Profesionalismo total."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">CL</div>
+              <div>
+                <div class="testimonial-name">Carlos López</div>
+                <div class="testimonial-company">Gerente — Constructora Andina S.A.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-200">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Llevamos 3 años trabajando con MECAFUTURO para el mantenimiento de toda nuestra flota. La calidad del trabajo es excepcional y los precios muy competitivos. 100% recomendados."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">MR</div>
+              <div>
+                <div class="testimonial-name">María Rodríguez</div>
+                <div class="testimonial-company">Directora Operaciones — MinerCol</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-300">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "El diagnóstico técnico que realizaron fue impresionante. Identificaron problemas que otros talleres no pudieron detectar en semanas. El sistema hidráulico quedó perfecto."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">JP</div>
+              <div>
+                <div class="testimonial-name">Julián Pérez</div>
+                <div class="testimonial-company">Jefe de Mantenimiento — AgroTech</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-100">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Excelente servicio en la reparación de nuestros motores industriales. El equipo técnico es muy profesional y los plazos de entrega siempre se cumplen al pie de la letra."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">AG</div>
+              <div>
+                <div class="testimonial-name">Andrés García</div>
+                <div class="testimonial-company">Propietario — Transportes García</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-200">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "Contratamos MECAFUTURO para el mantenimiento preventivo anual de 15 equipos. El resultado fue increíble: cero fallas durante todo el año y reducción del 30% en costos."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">LM</div>
+              <div>
+                <div class="testimonial-name">Luis Martínez</div>
+                <div class="testimonial-company">CEO — CivEnco Ltda.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-300">
+            <div class="testimonial-quote">&ldquo;</div>
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">
+              "La soldadura y fabricación de piezas fue perfecta. Necesitábamos componentes especiales que no se consiguen en el mercado y MECAFUTURO los fabricó con calidad superior."
+            </p>
+            <div style="display:flex;align-items:center;gap:.875rem;">
+              <div class="testimonial-avatar">PC</div>
+              <div>
+                <div class="testimonial-name">Patricia Castillo</div>
+                <div class="testimonial-company">Gerente — Industrias Castillo</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACTO
+         ============================================ -->
+    <section id="contact" class="py-24" aria-labelledby="contact-title">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14">
+          <div class="section-tag inline-flex reveal">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="#F5C400"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            Contáctanos
+          </div>
+          <h2 id="contact-title" class="section-title mt-4 reveal delay-100">
+            Hablemos sobre tu<br/>
+            <span class="text-yellow">proyecto</span>
+          </h2>
+          <p class="text-gray-400 mt-3 reveal delay-200">Nuestro equipo responde en menos de 24 horas. Cuéntanos qué necesitas.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-10">
+
+          <!-- Form -->
+          <div class="lg:col-span-3 reveal">
+            <div class="contact-form-wrap">
+              <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:1.5rem;">Solicitar Cotización</h3>
+
+              <form id="contact-form" novalidate>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Nombre completo *</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Juan Pérez" autocomplete="name" required />
+                    <span class="form-error-msg"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="juan@empresa.com" autocomplete="email" required />
+                    <span class="form-error-msg"></span>
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div class="form-group">
+                    <label class="form-label" for="phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+57 300 000 0000" autocomplete="tel" />
+                    <span class="form-error-msg"></span>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="company">Empresa</label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa" autocomplete="organization" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="service">Servicio requerido *</label>
+                  <select id="service" name="service" class="form-select" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="reparacion">Reparación de maquinaria</option>
+                    <option value="preventivo">Mantenimiento preventivo</option>
+                    <option value="correctivo">Mantenimiento correctivo</option>
+                    <option value="diagnostico">Diagnóstico técnico</option>
+                    <option value="repuestos">Venta de repuestos</option>
+                    <option value="soldadura">Soldadura y fabricación</option>
+                    <option value="hidraulico">Sistemas hidráulicos</option>
+                    <option value="motores">Motores industriales</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Descripción del problema / requerimiento *</label>
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Describe detalladamente el problema o el servicio que necesitas. Incluye el tipo de maquinaria, marca y modelo si es posible." required></textarea>
+                  <span class="form-error-msg"></span>
+                </div>
+
+                <button type="submit" class="btn-primary w-full justify-center" style="font-size:1rem;padding:.9rem 2rem;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Enviar Solicitud
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Info + Map -->
+          <div class="lg:col-span-2 space-y-4 reveal delay-200">
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <div style="font-weight:700;font-size:.95rem;margin-bottom:.2rem;">Teléfono</div>
+                <a href="tel:+573000000000" style="color:#999;font-size:.9rem;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#F5C400'" onmouseout="this.style.color='#999'">+57 300 000 0000</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div style="font-weight:700;font-size:.95rem;margin-bottom:.2rem;">Correo</div>
+                <a href="mailto:info@mecafuturo.com" style="color:#999;font-size:.9rem;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#F5C400'" onmouseout="this.style.color='#999'">info@mecafuturo.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div style="font-weight:700;font-size:.95rem;margin-bottom:.2rem;">Dirección</div>
+                <p style="color:#999;font-size:.9rem;line-height:1.5;">Calle Industrial #45-67<br/>Zona Industrial, Colombia</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <div style="font-weight:700;font-size:.95rem;margin-bottom:.2rem;">Horario</div>
+                <p style="color:#999;font-size:.9rem;line-height:1.5;">Lun - Vie: 7:00am - 6:00pm<br/>Sáb: 8:00am - 2:00pm</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp CTA -->
+            <a href="https://wa.me/573000000000?text=Hola%2C%20necesito%20información%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer"
+               style="display:flex;align-items:center;gap:.875rem;background:#25D366;border-radius:14px;padding:1.1rem 1.5rem;text-decoration:none;color:white;font-weight:700;font-size:.95rem;transition:all .3s;box-shadow:0 4px 20px rgba(37,211,102,.3);"
+               onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(37,211,102,.5)'"
+               onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(37,211,102,.3)'">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chatear en WhatsApp
+            </a>
+
+            <!-- Map placeholder -->
+            <div class="map-wrap">
+              <div class="map-placeholder">
+                <span>📍</span>
+                <p style="font-size:.9rem;font-weight:600;color:#666;text-align:center;">Zona Industrial<br/>Colombia</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer id="footer" class="py-16" aria-label="Pie de página">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="logo-mecafuturo.png" alt="MECAFUTURO logo" class="h-10 w-auto object-contain"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <div style="display:none;align-items:center;gap:.4rem;">
+              <div style="width:8px;height:8px;background:#F5C400;border-radius:2px;transform:rotate(45deg);"></div>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.2rem;color:white;">MECA<span style="color:#F5C400;">FUTURO</span></span>
+            </div>
+          </div>
+          <p style="font-size:.875rem;color:#666;line-height:1.7;margin-bottom:1.25rem;">
+            Expertos en reparación y mantenimiento de maquinaria pesada. Más de 10 años transformando el sector industrial.
+          </p>
+          <div style="display:flex;gap:.625rem;flex-wrap:wrap;">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 style="font-weight:700;font-size:.95rem;margin-bottom:1.25rem;color:white;">Servicios</h4>
+          <a href="#services" class="footer-link">Reparación de maquinaria</a>
+          <a href="#services" class="footer-link">Mantenimiento preventivo</a>
+          <a href="#services" class="footer-link">Mantenimiento correctivo</a>
+          <a href="#services" class="footer-link">Diagnóstico técnico</a>
+          <a href="#services" class="footer-link">Sistemas hidráulicos</a>
+          <a href="#services" class="footer-link">Motores industriales</a>
+        </div>
+
+        <div>
+          <h4 style="font-weight:700;font-size:.95rem;margin-bottom:1.25rem;color:white;">Empresa</h4>
+          <a href="#about" class="footer-link">Quiénes somos</a>
+          <a href="#gallery" class="footer-link">Proyectos</a>
+          <a href="#testimonials" class="footer-link">Testimonios</a>
+          <a href="#benefits" class="footer-link">Por qué elegirnos</a>
+          <a href="#contact" class="footer-link">Contacto</a>
+        </div>
+
+        <div>
+          <h4 style="font-weight:700;font-size:.95rem;margin-bottom:1.25rem;color:white;">Contacto</h4>
+          <p style="color:#666;font-size:.875rem;line-height:1.7;margin-bottom:.75rem;">
+            📍 Calle Industrial #45-67<br/>Zona Industrial, Colombia
+          </p>
+          <p style="color:#666;font-size:.875rem;margin-bottom:.5rem;">📞 +57 300 000 0000</p>
+          <p style="color:#666;font-size:.875rem;margin-bottom:.5rem;">✉️ info@mecafuturo.com</p>
+          <p style="color:#666;font-size:.875rem;">🕐 Lun-Vie: 7am - 6pm</p>
+        </div>
+
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p style="font-size:.8rem;color:#444;">
+          © 2025 <strong style="color:#666;">MECAFUTURO S.A.S</strong>. Todos los derechos reservados.
+        </p>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:#444;font-size:.8rem;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#F5C400'" onmouseout="this.style.color='#444'">Política de privacidad</a>
+          <a href="#" style="color:#444;font-size:.8rem;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#F5C400'" onmouseout="this.style.color='#444'">Términos de uso</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================
+       FLOATING BUTTONS
+       ============================================ -->
+  <a href="https://wa.me/573000000000?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20maquinaria%20pesada"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="whatsapp-btn"
+     aria-label="Contactar por WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <button id="back-top" class="back-top-btn" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Toast notification -->
+  <div id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Extra style for cursor blink -->
+  <style>
+    @keyframes blink-cursor { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+
+  <!-- App JS -->
+  <script src="app.js"></script>
+</body>
+</html>
